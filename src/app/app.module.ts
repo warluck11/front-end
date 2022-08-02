@@ -8,6 +8,8 @@ import { BackgroundComponent } from './MyComponents/background/background.compon
 import { MiddleTextComponent } from './MyComponents/middle-text/middle-text.component';
 import { ContactComponent } from './MyComponents/contact/contact.component';
 import { FooterComponent } from './MyComponents/footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './MyComponents/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
