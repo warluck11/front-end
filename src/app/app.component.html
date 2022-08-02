@@ -1,7 +1,13 @@
 <div>
-    <app-navbar></app-navbar>
-    <app-background></app-background>
-    <app-middle-text></app-middle-text>
+   <app-navbar></app-navbar>  
+
+    <!-- Here remove all the component  Remaining component will load when user hit the url and will match with routes with the help of router-outler-->
+   <!-- <app-background></app-background>  -->
+ <!--   <app-middle-text></app-middle-text> -->    
+
+    <router-outlet></router-outlet>  <!-- Added roter outlet here for routing routes for various component-->
+
+    <!-- We will add navbar footer in that particular component's html as per our need-->
     
-    <app-footer></app-footer>
+   <app-footer></app-footer>  
 </div>
