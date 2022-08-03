@@ -3,7 +3,7 @@
 </head>
 
  
- <app-background></app-background>
+ <app-background1></app-background1>
 
 <div class="txt-block">
      <span class="big-circle"></span>
@@ -71,20 +71,21 @@
              <span>Email</span>
            </div>
 
+           <div>
+            <select class="input-select" name="countryCode" id="">
+              <option data-countryCode="GB" value="44" Selected>India (+91)</option>
+            
+            </select>
+           </div>
+
            <div class="input-container">
              <input [(ngModel)]="emailClient.mobileNumber" type="tel" name="phone" class="input" placeholder="Phone"/>
              <label for=""></label>
              <span>Phone</span>
-           </div>
+            </div>
+            
+          
 
-           <div>
-            <select class="form-select form-select-sm input-select" aria-label=".form-select-sm example">
-              <option selected>Country</option>      
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>     
-            </select>
-           </div>
 
            <!-- Added new field Email Subject -->
            <div class="input-container">

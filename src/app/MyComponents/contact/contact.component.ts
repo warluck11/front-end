@@ -1,11 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailserviceService } from 'src/app/services/emailservice.service';
+import {MAT_SNACK_BAR_DATA} from '@angular/material/snack-bar';
+import { NotifierService } from 'src/app/notifier.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css',],
+ 
 })
+
+
+
+
 export class ContactComponent implements OnInit {
 
   emailClient={
@@ -17,7 +24,9 @@ export class ContactComponent implements OnInit {
 
   }
 
-  constructor(private emailClientservice:EmailserviceService) { }
+  constructor(private emailClientservice:EmailserviceService,
+    private notifierService:NotifierService
+    ) { }
 
   ngOnInit(): void {
   }
@@ -32,11 +41,11 @@ export class ContactComponent implements OnInit {
 
 
       (data)=>{
-        alert('send');
+        this.notifierService.showNotification('Send', 'OK');
         
       },
       (error)=>{
-        alert('Not send');
+        this.notifierService.showNotification('Not Send', 'OK');
       }
     )
   }

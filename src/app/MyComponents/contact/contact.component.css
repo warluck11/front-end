@@ -4,7 +4,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -47%);
     text-align: center;
     
 }
@@ -189,7 +189,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: rgb(138, 34, 207);
+  color: rgb(129, 42, 186);
   line-height: 1;
   border-radius: 25px;
   outline: none;

@@ -10,6 +10,10 @@ import { ContactComponent } from './MyComponents/contact/contact.component';
 import { FooterComponent } from './MyComponents/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { Background1Component } from './MyComponents/background1/background1.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -18,13 +22,16 @@ import {HttpClientModule} from '@angular/common/http';
     BackgroundComponent,
     MiddleTextComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    Background1Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
